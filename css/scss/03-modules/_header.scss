@@ -5,10 +5,27 @@
     box-shadow: 0px 1px 5px 0px rgba(38, 47, 49, 0.5);
     background-color: #FFF;
     z-index: 100;
+    -webkit-transition: all .2s;
+       -moz-transition: all .2s;
+        -ms-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
     .wrapper {
         height: 100%;
         padding: 0 30px;
         @include flex();
+    }
+    @media (max-width: 980px) {
+        height: auto;
+        top: -100%;
+        background-color: rgba(255,255,255,.9);
+        padding: 20px 0;
+        .wrapper {
+            display: block;
+        }
+        &.active {
+            top: 0;
+        }
     }
 }
 
@@ -28,14 +45,29 @@
                 font-size: 18px;
                 color: $text;
                 margin: 0 15px;
+                @media (max-width: 980px) {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
             }
         }
+    }
+}
+
+.logo {
+    @media (max-width: 980px) {
+        display: block;
+        margin: 0px auto 20px;
     }
 }
 
 .tel {
     font: 18px $ps;
     color: $text;
+    @media (max-width: 980px) {
+        display: block;
+        margin-top: 10px;
+    }
 }
 
 
@@ -46,26 +78,30 @@
   * {
       transition: .1s ease-in-out;
   }
+  @include position(fixed, 10px, 10px, auto, auto);
   display: none;
-  width:35px;
-  height:24px;
-  position:relative;
+  width:48px;
+  height:32px;
+  padding: 6px 4px;
   cursor:pointer;
   text-align: right;
+  z-index: 101;
+  background-color: #FFF;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   @media (max-width: 980px) {
       display: block;
   }
   span {
       display: block;
   }
-  &:hover {
-    background:rgba(255,255,255,.8);
-  }
   #hamburger {
     position:absolute;
     height:100%;
-    width:100%;
+    width:70%;
     z-index: 2;
+    left: 0;right: 0;
+    margin: auto;
     span {
       width:100%;
       height:2px;
@@ -79,7 +115,7 @@
       }
       &:nth-child(2){
         transition-delay:.625s;
-        margin: 8px 0;
+        margin: 7px 0;
       }
       &:nth-child(3){
         transition-delay:.75s;
@@ -114,8 +150,11 @@
     }
   #cross {
     position:absolute;
-    height:100%;
     width:100%;
+    height:70%;
+    left: 4px;right: 0;
+    top: 9px;
+    margin: auto;
     transform:rotate(45deg);
     span{
       background: $text;

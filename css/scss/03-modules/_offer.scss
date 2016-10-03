@@ -8,10 +8,41 @@
          -o-background-size: cover;
             background-size: cover;
     @include flex($direction: column, $justify: center, $alignI: center);
+    @media (max-width: 980px) {
+        padding-top: 60px;
+        background-image: url("../images/offer_tab.jpg");
+        height: auto;
+    }
+     @media (max-width: 500px) {
+        background-position: 100% 50%;
+    }
     form {
         margin-top: 170px;
+        @media (max-width: 980px) {
+            margin-top: 60px;
+            .button {
+                margin: 20px auto 0;
+                display: block;
+            }
+        }
+        @media (max-width: 700px) {
+            input {
+                display: block;
+                margin: 5px auto;
+            }
+        }
+        @media (max-width: 500px) {
+            margin-top: 40px;
+        }
     }
     p {
         margin-top: 10px;
+         @media (max-width: 980px) {
+            background-color: rgba(255,255,255, .5);
+            display: inline-block;
+            padding: 15px;
+            -webkit-border-radius: 4px;
+                    border-radius: 4px;
+        }
     }
 }
