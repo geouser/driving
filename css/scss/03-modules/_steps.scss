@@ -1,0 +1,32 @@
+.steps {
+    margin-bottom: 60px;
+    @include flex();
+    &__item {
+        font: 16px $pl;
+        width: 25%;
+        padding: 0 10px;
+        text-align: center;
+        span {
+            font: 18px $pr;
+            color: $textL;
+            display: block;
+            margin-bottom: 10px;
+        }
+        &__img {
+            display: block;
+            height: 110px;
+            text-align: center;
+            margin: 0 auto 25px;
+            &:before {
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+                content: "";
+                margin-right: -2px;
+            }
+            img {
+                max-width: 99%;
+            }
+        }
+    }
+}

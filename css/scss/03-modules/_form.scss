@@ -1,0 +1,27 @@
+form {
+    input {
+        height: 40px;
+        border: 1px solid #fff;
+        background-color: rgba(20,20,20, .5);
+        margin: 0 10px;
+        color: #FFF;
+        font: 16px $pl;
+        padding-left: 15px;
+    }
+    button {
+        margin: 0 10px;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   opacity:  1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity:  1;
+}

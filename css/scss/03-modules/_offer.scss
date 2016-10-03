@@ -1,3 +1,17 @@
 .offer {
-    height: 800px;
+    height: 700px;
+    padding-top: 100px;
+    background-image: url("../images/offer.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    @include flex($direction: column, $justify: center, $alignI: center);
+    form {
+        margin-top: 170px;
+    }
+    p {
+        margin-top: 10px;
+    }
 }

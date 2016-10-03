@@ -1,16 +1,49 @@
 
-// TYPOGRAPHIC
-// ---------------------------
+
 html,
 body {
 	height: 100%;
+    font-family: $pr;
+    color: $text;
+}
+body {
+    padding-top: 90px;
 }
 
+
+// TYPOGRAPHIC
+// ---------------------------
+h1,h2,h3,h4 {
+    font-family: $cg;
+    font-weight: normal;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    &:after {
+        content: "";
+        display: block;
+        margin: 30px auto;
+        width: 70px;
+        height: 1px;
+        background-color: $accent;
+    }
+}
+
+.white {
+    color: #FFF;
+}
 
 // lAYOUT
 // ---------------------------
 .wrapper {
-	width: 1200px;
+	width: 960px;
 	margin: 0 auto;
 	text-align: center;
+}
+section {
+    padding: 60px 0;
 }
