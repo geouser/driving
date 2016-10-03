@@ -1,0 +1,26 @@
+footer {
+    background-color: #262F31;
+    padding: 35px 0;
+    color: #fff;
+    font-size: 18px;
+
+    .socials {
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

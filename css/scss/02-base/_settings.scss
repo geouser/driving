@@ -47,3 +47,6 @@ h2 {
 section {
     padding: 60px 0;
 }
+.flex {
+    @include flex();
+}

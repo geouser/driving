@@ -1,0 +1,59 @@
+.google-h, .google, .youtube-h, .youtube, .fax, 
+.mail, .phone, .pin, .facebook-h, .facebook, 
+.insta-h, .insta
+{ display: inline-block; background: url(../images/icons-sprite.png) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.google:hover { background-position: -5px -0px; width: 37px; height: 24px; }
+.google { background-position: -5px -29px; width: 37px; height: 24px; }
+.youtube:hover { background-position: -5px -58px; width: 34px; height: 24px; }
+.youtube { background-position: -5px -87px; width: 34px; height: 24px; }
+.fax { background-position: -5px -116px; width: 32px; height: 32px; }
+.mail { background-position: -5px -153px; width: 32px; height: 24px; }
+.phone { background-position: -5px -182px; width: 32px; height: 32px; }
+.pin { background-position: -5px -219px; width: 32px; height: 32px; }
+.facebook:hover { background-position: -5px -256px; width: 24px; height: 24px; }
+.facebook { background-position: -5px -285px; width: 24px; height: 24px; }
+.insta:hover { background-position: -5px -314px; width: 24px; height: 24px; }
+.insta { background-position: -5px -343px; width: 24px; height: 24px; }
+
+.contacts .flex {
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.column-info,
+.column-map {
+    width: 50%;
+}
+
+.column-info li:not(:last-child) {
+    margin-bottom: 35px;
+}
+.column-info i {
+    margin-right: 33px;
+}
+.column-info p {
+    width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+    text-align: left;
+    font-size: 18px;
+}
+
+.contacts .form {
+    width: 100%;
+    border: 2px solid #ED1C24;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: 65px;
+
+    input {
+        background-color: transparent;
+        color: $text;
+        border: 1px solid #C8C9CB;
+        width: 200px;
+    }
+}
