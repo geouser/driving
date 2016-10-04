@@ -1,11 +1,23 @@
 .steps {
     margin-bottom: 60px;
     @include flex();
+    @media (max-width: 700px) {
+       -webkit-justify-content: center;
+               justify-content: center;
+    }
     &__item {
         font: 16px $pl;
         width: 25%;
         padding: 0 10px;
         text-align: center;
+        @media (max-width: 700px) {
+           width: 45%;
+           margin: 10px;
+        }
+        @media (max-width: 400px) {
+           width: 100%;
+           margin: 10px auto;
+        }
         span {
             font: 18px $pr;
             color: $textL;

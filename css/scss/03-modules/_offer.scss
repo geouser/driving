@@ -1,7 +1,9 @@
 .offer {
     height: 700px;
     padding-top: 100px;
-    background-image: url("../images/offer.jpg");
+    @media (min-width: 981px) {
+        background-image: url("../images/offer.jpg");
+    }
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: cover;

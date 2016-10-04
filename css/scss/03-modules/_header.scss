@@ -81,7 +81,7 @@
   @include position(fixed, 10px, 10px, auto, auto);
   display: none;
   width:48px;
-  height:32px;
+  height:36px;
   padding: 6px 4px;
   cursor:pointer;
   text-align: right;
@@ -97,8 +97,9 @@
   }
   #hamburger {
     position:absolute;
-    height:100%;
+    height: auto;
     width:70%;
+    top: 8px;
     z-index: 2;
     left: 0;right: 0;
     margin: auto;
@@ -153,7 +154,7 @@
     width:100%;
     height:70%;
     left: 4px;right: 0;
-    top: 9px;
+    top: 11px;
     margin: auto;
     transform:rotate(45deg);
     span{
