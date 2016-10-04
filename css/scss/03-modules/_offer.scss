@@ -20,6 +20,12 @@
     }
     form {
         margin-top: 170px;
+         @media (max-width: 1040px) {
+            .button {
+                margin: 20px auto 0;
+                display: block;
+            }
+        }
         @media (max-width: 980px) {
             margin-top: 60px;
             .button {
