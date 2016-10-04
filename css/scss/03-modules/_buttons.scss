@@ -8,8 +8,21 @@
     color: #FFF;
     border: none;
     cursor: pointer;
+    -webkit-transition: all .2s;
+       -moz-transition: all .2s;
+        -ms-transition: all .2s;
+         -o-transition: all .2s;
+            transition: all .2s;
+    &:hover {
+        background-color: $text;
+        color: #FFF;
+    }
     &--white {
         background-color: #FFF;
         color: $text;
+        &:hover {
+            background-color: $accent;
+            color: #FFF;
+        }
     }
 }
