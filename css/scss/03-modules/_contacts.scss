@@ -28,6 +28,15 @@
 .column-info,
 .column-map {
     width: 50%;
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+}
+.column-map {
+    @media (max-width: 750px) {
+       height: 400px;
+       margin-top: 40px;
+    }
 }
 
 .column-info li:not(:last-child) {
@@ -35,12 +44,18 @@
 }
 .column-info i {
     margin-right: 33px;
+    @media (max-width: 500px) {
+        margin-right: 10px;
+    }
 }
 .column-info p {
     width: -webkit-calc(100% - 70px);
     width: calc(100% - 70px);
     text-align: left;
     font-size: 18px;
+    @media (max-width: 500px) {
+       font-size: 16px;
+    }
 }
 
 .contacts .form {
@@ -55,5 +70,15 @@
         color: $text;
         border: 1px solid #C8C9CB;
         width: 200px;
+        @media (max-width: 750px) {
+            display: block;
+            margin: 8px auto;
+        }
+    }
+    @media (max-width: 980px) {
+        .button {
+            display: block;
+            margin: 20px auto 0;
+        }
     }
 }
