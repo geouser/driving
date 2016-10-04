@@ -34,12 +34,26 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+    @media (min-width: 981px) {
+      height: 100%;
+    }
+
     ul {
         list-style-type: none;
         margin: 0;
+
+        @media (min-width: 981px) {
+            height: 100%;
+        }
+
+
         li {
             display: inline-block;
             vertical-align: top; 
+
+            @media (min-width: 981px) {
+                height: 100%;
+            }
             a {
                 display: inline-block;
                 font-size: 18px;
@@ -50,6 +64,11 @@
                 -o-transition: color 0.3s ease;
                 transition: color 0.3s ease;
 
+                @media (min-width: 981px) {
+                    height: 100%;
+                    padding: 34px 0 0;
+                }
+
                 &:hover {
                   color: $accent;
                 }
@@ -58,7 +77,7 @@
                   content: '';
                   width: 0;
                   left: 50%;
-                  top: 100%;
+                  bottom: 0;
                   -webkit-transform: translateX(-50%);
                   -ms-transform: translateX(-50%);
                   -o-transform: translateX(-50%);
